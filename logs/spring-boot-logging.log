@@ -1,0 +1,611 @@
+2019-01-16 12:52:43.183  INFO 4420 --- [restartedMain] com.example.demo.Demo2Application        : Starting Demo2Application on DESKTOP-SMEPSU4 with PID 4420 (C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql\target\classes started by SAMBATH in C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql)
+2019-01-16 12:52:43.185  INFO 4420 --- [restartedMain] com.example.demo.Demo2Application        : No active profile set, falling back to default profiles: default
+2019-01-16 12:52:43.419  INFO 4420 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b046b0d: startup date [Wed Jan 16 12:52:43 ICT 2019]; root of context hierarchy
+2019-01-16 12:52:52.790  INFO 4420 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-01-16 12:52:52.902  INFO 4420 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-16 12:52:52.905  INFO 4420 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-01-16 12:52:54.340  INFO 4420 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-16 12:52:54.342  INFO 4420 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 10931 ms
+2019-01-16 12:52:54.887  INFO 4420 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-16 12:52:55.036  INFO 4420 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-16 12:52:55.039  INFO 4420 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-16 12:52:55.039  INFO 4420 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-16 12:52:55.040  INFO 4420 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-16 12:52:55.588  INFO 4420 --- [restartedMain] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.mysql.jdbc.Driver
+2019-01-16 12:52:59.607  INFO 4420 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-16 12:53:00.346  INFO 4420 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-16 12:53:03.359  INFO 4420 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-01-16 12:53:03.366  INFO 4420 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-01-16 12:53:03.374  INFO 4420 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-01-16 12:53:03.796  INFO 4420 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-16 12:53:04.841  INFO 4420 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-16 12:53:13.716  INFO 4420 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-16 12:53:14.889  INFO 4420 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-16 12:53:15.102  INFO 4420 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2019-01-16 12:53:15.473  INFO 4420 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2019-01-16 12:53:15.695  INFO 4420 --- [restartedMain] o.s.o.h.HibernateTransactionManager      : Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@565f9d63] of Hibernate SessionFactory for HibernateTransactionManager
+2019-01-16 12:53:16.671  INFO 4420 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b046b0d: startup date [Wed Jan 16 12:52:43 ICT 2019]; root of context hierarchy
+2019-01-16 12:53:17.072  INFO 4420 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto java.lang.String com.example.demo.controller.IndexController.index()
+2019-01-16 12:53:17.108  INFO 4420 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products]}" onto public org.springframework.http.ResponseEntity<java.util.List> com.example.demo.controller.ProductController.index()
+2019-01-16 12:53:17.110  INFO 4420 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/update],methods=[PUT],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.controller.ProductController.update(com.example.demo.model.Product)
+2019-01-16 12:53:17.111  INFO 4420 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}],methods=[DELETE],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.model.Product> com.example.demo.controller.ProductController.delete(int)
+2019-01-16 12:53:17.112  INFO 4420 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/create],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.example.demo.controller.ProductController.create(com.example.demo.model.Product,org.springframework.web.util.UriComponentsBuilder)
+2019-01-16 12:53:17.113  INFO 4420 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.model.Product> com.example.demo.controller.ProductController.getProductById(int)
+2019-01-16 12:53:17.114  INFO 4420 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/get],methods=[GET],produces=[application/json]}" onto public java.util.List<com.example.demo.model.Product> com.example.demo.controller.ProductController.getAllProducts()
+2019-01-16 12:53:17.118  INFO 4420 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-16 12:53:17.119  INFO 4420 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-16 12:53:17.214  INFO 4420 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-16 12:53:17.215  INFO 4420 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-16 12:53:17.305  INFO 4420 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-16 12:53:18.418  INFO 4420 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-01-16 12:53:18.602  INFO 4420 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-16 12:53:21.534  INFO 4420 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-01-16 12:53:21.553  INFO 4420 --- [restartedMain] com.example.demo.Demo2Application        : Started Demo2Application in 39.195 seconds (JVM running for 40.848)
+2019-01-16 12:55:59.883  INFO 4420 --- [Thread-6] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b046b0d: startup date [Wed Jan 16 12:52:43 ICT 2019]; root of context hierarchy
+2019-01-16 12:55:59.891  INFO 4420 --- [Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-01-16 12:55:59.900  INFO 4420 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-16 12:56:02.182  INFO 4420 --- [restartedMain] com.example.demo.Demo2Application        : Starting Demo2Application on DESKTOP-SMEPSU4 with PID 4420 (C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql\target\classes started by SAMBATH in C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql)
+2019-01-16 12:56:02.183  INFO 4420 --- [restartedMain] com.example.demo.Demo2Application        : No active profile set, falling back to default profiles: default
+2019-01-16 12:56:02.192  INFO 4420 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43f750dc: startup date [Wed Jan 16 12:56:02 ICT 2019]; root of context hierarchy
+2019-01-16 12:56:04.581  INFO 4420 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-01-16 12:56:04.583  INFO 4420 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-16 12:56:04.585  INFO 4420 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-01-16 12:56:04.700  INFO 4420 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-16 12:56:04.701  INFO 4420 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2510 ms
+2019-01-16 12:56:04.787  INFO 4420 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-16 12:56:04.789  INFO 4420 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-16 12:56:04.793  INFO 4420 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-16 12:56:04.794  INFO 4420 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-16 12:56:04.795  INFO 4420 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-16 12:56:04.826  INFO 4420 --- [restartedMain] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.mysql.jdbc.Driver
+2019-01-16 12:56:04.989  INFO 4420 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-16 12:56:04.990  INFO 4420 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-16 12:56:05.062  INFO 4420 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-16 12:56:05.137  INFO 4420 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-16 12:56:06.216  INFO 4420 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-16 12:56:06.291  INFO 4420 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2019-01-16 12:56:07.485  INFO 4420 --- [restartedMain] o.s.o.h.HibernateTransactionManager      : Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@6a2e9d71] of Hibernate SessionFactory for HibernateTransactionManager
+2019-01-16 12:56:07.675  INFO 4420 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43f750dc: startup date [Wed Jan 16 12:56:02 ICT 2019]; root of context hierarchy
+2019-01-16 12:56:07.706  INFO 4420 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto java.lang.String com.example.demo.controller.IndexController.index()
+2019-01-16 12:56:07.710  INFO 4420 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products]}" onto public org.springframework.http.ResponseEntity<java.util.List> com.example.demo.controller.ProductController.index()
+2019-01-16 12:56:07.711  INFO 4420 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/update],methods=[PUT],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.controller.ProductController.update(com.example.demo.model.Product)
+2019-01-16 12:56:07.712  INFO 4420 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}],methods=[DELETE],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.model.Product> com.example.demo.controller.ProductController.delete(int)
+2019-01-16 12:56:07.713  INFO 4420 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/create],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.example.demo.controller.ProductController.create(com.example.demo.model.Product,org.springframework.web.util.UriComponentsBuilder)
+2019-01-16 12:56:07.714  INFO 4420 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.model.Product> com.example.demo.controller.ProductController.getProductById(int)
+2019-01-16 12:56:07.716  INFO 4420 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/get],methods=[GET],produces=[application/json]}" onto public java.util.List<com.example.demo.model.Product> com.example.demo.controller.ProductController.getAllProducts()
+2019-01-16 12:56:07.720  INFO 4420 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-16 12:56:07.720  INFO 4420 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-16 12:56:07.746  INFO 4420 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-16 12:56:07.748  INFO 4420 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-16 12:56:07.792  INFO 4420 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-16 12:56:08.011  INFO 4420 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-01-16 12:56:08.103  INFO 4420 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-16 12:56:08.146  INFO 4420 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-01-16 12:56:08.152  INFO 4420 --- [restartedMain] com.example.demo.Demo2Application        : Started Demo2Application in 6.091 seconds (JVM running for 207.446)
+2019-01-16 13:10:34.468  INFO 6536 --- [restartedMain] com.example.demo.Demo2Application        : Starting Demo2Application on DESKTOP-SMEPSU4 with PID 6536 (C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql\target\classes started by SAMBATH in C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql)
+2019-01-16 13:10:34.473  INFO 6536 --- [restartedMain] com.example.demo.Demo2Application        : No active profile set, falling back to default profiles: default
+2019-01-16 13:10:34.905  INFO 6536 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@286af9e7: startup date [Wed Jan 16 13:10:34 ICT 2019]; root of context hierarchy
+2019-01-16 13:10:54.087  INFO 6536 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-01-16 13:10:54.279  INFO 6536 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-16 13:10:54.281  INFO 6536 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-01-16 13:10:55.938  INFO 6536 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-16 13:10:55.940  INFO 6536 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 21127 ms
+2019-01-16 13:10:56.957  INFO 6536 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-16 13:10:56.968  INFO 6536 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-16 13:10:56.970  INFO 6536 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-16 13:10:56.970  INFO 6536 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-16 13:10:56.971  INFO 6536 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-16 13:10:59.017  INFO 6536 --- [restartedMain] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.mysql.jdbc.Driver
+2019-01-16 13:11:02.398  INFO 6536 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-16 13:11:02.746  INFO 6536 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-16 13:11:04.924  INFO 6536 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-01-16 13:11:04.928  INFO 6536 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-01-16 13:11:04.932  INFO 6536 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-01-16 13:11:05.774  INFO 6536 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-16 13:11:07.893  INFO 6536 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-16 13:11:16.168  INFO 6536 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-16 13:11:18.862  INFO 6536 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-16 13:11:19.084  INFO 6536 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2019-01-16 13:11:19.653  INFO 6536 --- [restartedMain] o.s.o.h.HibernateTransactionManager      : Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@f50ec68] of Hibernate SessionFactory for HibernateTransactionManager
+2019-01-16 13:11:20.674  INFO 6536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@286af9e7: startup date [Wed Jan 16 13:10:34 ICT 2019]; root of context hierarchy
+2019-01-16 13:11:21.090  INFO 6536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto java.lang.String com.example.demo.controller.IndexController.index()
+2019-01-16 13:11:21.112  INFO 6536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products]}" onto public org.springframework.http.ResponseEntity<java.util.List> com.example.demo.controller.ProductController.index()
+2019-01-16 13:11:21.116  INFO 6536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/update],methods=[PUT],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.controller.ProductController.update(com.example.demo.model.Product)
+2019-01-16 13:11:21.121  INFO 6536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}],methods=[DELETE],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.model.Product> com.example.demo.controller.ProductController.delete(int)
+2019-01-16 13:11:21.122  INFO 6536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/create],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.example.demo.controller.ProductController.create(com.example.demo.model.Product,org.springframework.web.util.UriComponentsBuilder)
+2019-01-16 13:11:21.123  INFO 6536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.model.Product> com.example.demo.controller.ProductController.getProductById(int)
+2019-01-16 13:11:21.126  INFO 6536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/get],methods=[GET],produces=[application/json]}" onto public java.util.List<com.example.demo.model.Product> com.example.demo.controller.ProductController.getAllProducts()
+2019-01-16 13:11:21.135  INFO 6536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-16 13:11:21.136  INFO 6536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-16 13:11:21.234  INFO 6536 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-16 13:11:21.237  INFO 6536 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-16 13:11:21.382  INFO 6536 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-16 13:11:22.560  INFO 6536 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-01-16 13:11:22.785  INFO 6536 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-16 13:11:26.766  INFO 6536 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-01-16 13:11:26.805  INFO 6536 --- [restartedMain] com.example.demo.Demo2Application        : Started Demo2Application in 55.047 seconds (JVM running for 74.292)
+2019-01-16 13:13:42.850  INFO 6536 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-16 13:13:42.852  INFO 6536 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-16 13:13:42.999  INFO 6536 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 144 ms
+2019-01-16 13:13:44.720  INFO 6536 --- [http-nio-8080-exec-1] c.e.demo.controller.ProductController    : Get all products
+2019-01-16 13:14:16.690  INFO 6536 --- [http-nio-8080-exec-3] c.e.demo.controller.ProductController    : Get all products
+2019-01-16 13:15:35.140  INFO 6536 --- [http-nio-8080-exec-6] c.e.demo.controller.ProductController    : Get all products
+2019-01-16 13:19:57.851  INFO 612 --- [restartedMain] com.example.demo.Demo2Application        : Starting Demo2Application on DESKTOP-SMEPSU4 with PID 612 (C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql\target\classes started by SAMBATH in C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql)
+2019-01-16 13:19:57.854  INFO 612 --- [restartedMain] com.example.demo.Demo2Application        : No active profile set, falling back to default profiles: default
+2019-01-16 13:19:58.000  INFO 612 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@728588ea: startup date [Wed Jan 16 13:19:57 ICT 2019]; root of context hierarchy
+2019-01-16 13:20:03.992  INFO 612 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-01-16 13:20:04.089  INFO 612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-16 13:20:04.104  INFO 612 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-01-16 13:20:04.782  INFO 612 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-16 13:20:04.783  INFO 612 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6791 ms
+2019-01-16 13:20:05.283  INFO 612 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-16 13:20:05.292  INFO 612 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-16 13:20:05.293  INFO 612 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-16 13:20:05.295  INFO 612 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-16 13:20:05.296  INFO 612 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-16 13:20:05.456  INFO 612 --- [restartedMain] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.mysql.jdbc.Driver
+2019-01-16 13:20:06.600  INFO 612 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-16 13:20:06.688  INFO 612 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-16 13:20:07.292  INFO 612 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-01-16 13:20:07.300  INFO 612 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-01-16 13:20:07.310  INFO 612 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-01-16 13:20:07.517  INFO 612 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-16 13:20:08.227  INFO 612 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-16 13:20:09.998  INFO 612 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-16 13:20:11.220  INFO 612 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-16 13:20:11.428  INFO 612 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2019-01-16 13:20:12.012  INFO 612 --- [restartedMain] o.s.o.h.HibernateTransactionManager      : Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@8bf11d6] of Hibernate SessionFactory for HibernateTransactionManager
+2019-01-16 13:20:12.843  INFO 612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@728588ea: startup date [Wed Jan 16 13:19:57 ICT 2019]; root of context hierarchy
+2019-01-16 13:20:13.186  INFO 612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto java.lang.String com.example.demo.controller.IndexController.index()
+2019-01-16 13:20:13.205  INFO 612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products]}" onto public org.springframework.http.ResponseEntity<java.util.List> com.example.demo.controller.ProductController.index()
+2019-01-16 13:20:13.206  INFO 612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/update],methods=[PUT],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.controller.ProductController.update(com.example.demo.model.Product)
+2019-01-16 13:20:13.207  INFO 612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}],methods=[DELETE],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.model.Product> com.example.demo.controller.ProductController.delete(int)
+2019-01-16 13:20:13.208  INFO 612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/create],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.example.demo.controller.ProductController.create(com.example.demo.model.Product,org.springframework.web.util.UriComponentsBuilder)
+2019-01-16 13:20:13.209  INFO 612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.model.Product> com.example.demo.controller.ProductController.getProductById(int)
+2019-01-16 13:20:13.212  INFO 612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/get],methods=[GET],produces=[application/json]}" onto public java.util.List<com.example.demo.model.Product> com.example.demo.controller.ProductController.getAllProducts()
+2019-01-16 13:20:13.217  INFO 612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-16 13:20:13.218  INFO 612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-16 13:20:13.325  INFO 612 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-16 13:20:13.326  INFO 612 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-16 13:20:13.429  INFO 612 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-16 13:20:14.199  INFO 612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-01-16 13:20:14.357  INFO 612 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-16 13:20:14.640  INFO 612 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-01-16 13:20:14.653  INFO 612 --- [restartedMain] com.example.demo.Demo2Application        : Started Demo2Application in 17.447 seconds (JVM running for 19.079)
+2019-01-16 13:20:18.711  INFO 612 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-16 13:20:18.712  INFO 612 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-16 13:20:18.761  INFO 612 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 49 ms
+2019-01-16 13:20:18.974  INFO 612 --- [http-nio-8080-exec-2] c.e.demo.controller.ProductController    : Get all products
+2019-01-17 10:01:22.331  INFO 8116 --- [restartedMain] com.example.demo.Demo2Application        : Starting Demo2Application on DESKTOP-SMEPSU4 with PID 8116 (C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql\target\classes started by SAMBATH in C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql)
+2019-01-17 10:01:22.356  INFO 8116 --- [restartedMain] com.example.demo.Demo2Application        : No active profile set, falling back to default profiles: default
+2019-01-17 10:01:23.689  INFO 8116 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@71997751: startup date [Thu Jan 17 10:01:23 ICT 2019]; root of context hierarchy
+2019-01-17 10:05:27.219  INFO 10472 --- [restartedMain] com.example.demo.Demo2Application        : Starting Demo2Application on DESKTOP-SMEPSU4 with PID 10472 (C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql\target\classes started by SAMBATH in C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql)
+2019-01-17 10:05:27.222  INFO 10472 --- [restartedMain] com.example.demo.Demo2Application        : No active profile set, falling back to default profiles: default
+2019-01-17 10:05:27.534  INFO 10472 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a843cdf: startup date [Thu Jan 17 10:05:27 ICT 2019]; root of context hierarchy
+2019-01-17 10:05:36.049  INFO 10472 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-01-17 10:05:36.146  INFO 10472 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-17 10:05:36.149  INFO 10472 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-01-17 10:05:36.742  INFO 10472 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-17 10:05:36.743  INFO 10472 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 9241 ms
+2019-01-17 10:05:37.231  INFO 10472 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-17 10:05:37.248  INFO 10472 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-17 10:05:37.250  INFO 10472 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-17 10:05:37.250  INFO 10472 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-17 10:05:37.251  INFO 10472 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-17 10:05:37.592  INFO 10472 --- [restartedMain] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.mysql.jdbc.Driver
+2019-01-17 10:05:39.594  INFO 10472 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-17 10:05:39.999  INFO 10472 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-17 10:05:40.687  INFO 10472 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-01-17 10:05:40.692  INFO 10472 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-01-17 10:05:40.695  INFO 10472 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-01-17 10:05:40.979  INFO 10472 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-17 10:05:41.589  INFO 10472 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-17 10:05:44.164  INFO 10472 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-17 10:05:46.800  INFO 10472 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-17 10:05:46.947  INFO 10472 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2019-01-17 10:05:47.584  INFO 10472 --- [restartedMain] o.s.o.h.HibernateTransactionManager      : Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@bc63ab4] of Hibernate SessionFactory for HibernateTransactionManager
+2019-01-17 10:05:51.250  INFO 10472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a843cdf: startup date [Thu Jan 17 10:05:27 ICT 2019]; root of context hierarchy
+2019-01-17 10:05:55.769  INFO 10472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto java.lang.String com.example.demo.controller.IndexController.index()
+2019-01-17 10:05:55.794  INFO 10472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products]}" onto public org.springframework.http.ResponseEntity<java.util.List> com.example.demo.controller.ProductController.index()
+2019-01-17 10:05:55.796  INFO 10472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/update],methods=[PUT],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.controller.ProductController.update(com.example.demo.model.Product)
+2019-01-17 10:05:55.798  INFO 10472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}],methods=[DELETE],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.model.Product> com.example.demo.controller.ProductController.delete(int)
+2019-01-17 10:05:55.799  INFO 10472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/create],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.example.demo.controller.ProductController.create(com.example.demo.model.Product,org.springframework.web.util.UriComponentsBuilder)
+2019-01-17 10:05:55.801  INFO 10472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.model.Product> com.example.demo.controller.ProductController.getProductById(int)
+2019-01-17 10:05:55.802  INFO 10472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/get],methods=[GET],produces=[application/json]}" onto public java.util.List<com.example.demo.model.Product> com.example.demo.controller.ProductController.getAllProducts()
+2019-01-17 10:05:55.810  INFO 10472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-17 10:05:55.812  INFO 10472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-17 10:05:55.987  INFO 10472 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-17 10:05:55.987  INFO 10472 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-17 10:05:56.316  INFO 10472 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-17 10:05:57.463  INFO 10472 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-01-17 10:05:57.655  INFO 10472 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-17 10:05:58.047  INFO 10472 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-01-17 10:05:58.063  INFO 10472 --- [restartedMain] com.example.demo.Demo2Application        : Started Demo2Application in 33.586 seconds (JVM running for 36.174)
+2019-01-17 10:07:28.470  INFO 10472 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-17 10:07:28.471  INFO 10472 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-17 10:07:28.529  INFO 10472 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 58 ms
+2019-01-17 10:07:29.352 ERROR 10472 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: org.hibernate.internal.CriteriaImpl cannot be cast to com.example.demo.model.Product] with root cause
+
+java.lang.ClassCastException: org.hibernate.internal.CriteriaImpl cannot be cast to com.example.demo.model.Product
+	at com.example.demo.dao.ProductDaoImp.findById(ProductDaoImp.java:38) ~[classes/:na]
+	at com.example.demo.dao.ProductDaoImp$$FastClassBySpringCGLIB$$cd482f3.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) ~[spring-core-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738) ~[spring-aop-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) ~[spring-aop-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) ~[spring-tx-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99) ~[spring-tx-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282) ~[spring-tx-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) ~[spring-tx-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673) ~[spring-aop-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at com.example.demo.dao.ProductDaoImp$$EnhancerBySpringCGLIB$$4925f711.findById(<generated>) ~[classes/:na]
+	at com.example.demo.service.ProductService.findById(ProductService.java:24) ~[classes/:na]
+	at com.example.demo.controller.ProductController.getProductById(ProductController.java:46) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_111]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_111]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_111]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_111]
+
+2019-01-17 10:09:42.947  INFO 4844 --- [restartedMain] com.example.demo.Demo2Application        : Starting Demo2Application on DESKTOP-SMEPSU4 with PID 4844 (C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql\target\classes started by SAMBATH in C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql)
+2019-01-17 10:09:42.950  INFO 4844 --- [restartedMain] com.example.demo.Demo2Application        : No active profile set, falling back to default profiles: default
+2019-01-17 10:09:43.104  INFO 4844 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e17b5cc: startup date [Thu Jan 17 10:09:43 ICT 2019]; root of context hierarchy
+2019-01-17 10:09:49.507  INFO 4844 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-01-17 10:09:49.565  INFO 4844 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-17 10:09:49.568  INFO 4844 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-01-17 10:09:50.052  INFO 4844 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-17 10:09:50.052  INFO 4844 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6954 ms
+2019-01-17 10:09:50.530  INFO 4844 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-17 10:09:50.562  INFO 4844 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-17 10:09:50.564  INFO 4844 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-17 10:09:50.573  INFO 4844 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-17 10:09:50.574  INFO 4844 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-17 10:09:50.757  INFO 4844 --- [restartedMain] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.mysql.jdbc.Driver
+2019-01-17 10:09:54.818  INFO 4844 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-17 10:09:55.478  INFO 4844 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-17 10:09:57.087  INFO 4844 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-01-17 10:09:57.089  INFO 4844 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-01-17 10:09:57.092  INFO 4844 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-01-17 10:09:57.252  INFO 4844 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-17 10:09:57.665  INFO 4844 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-17 10:09:59.315  INFO 4844 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-17 10:10:00.542  INFO 4844 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-17 10:10:00.671  INFO 4844 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2019-01-17 10:10:01.007  INFO 4844 --- [restartedMain] o.s.o.h.HibernateTransactionManager      : Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@59b4863d] of Hibernate SessionFactory for HibernateTransactionManager
+2019-01-17 10:10:01.768  INFO 4844 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e17b5cc: startup date [Thu Jan 17 10:09:43 ICT 2019]; root of context hierarchy
+2019-01-17 10:10:02.154  INFO 4844 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto java.lang.String com.example.demo.controller.IndexController.index()
+2019-01-17 10:10:02.183  INFO 4844 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products]}" onto public org.springframework.http.ResponseEntity<java.util.List> com.example.demo.controller.ProductController.index()
+2019-01-17 10:10:02.193  INFO 4844 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/update],methods=[PUT],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.controller.ProductController.update(com.example.demo.model.Product)
+2019-01-17 10:10:02.194  INFO 4844 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}],methods=[DELETE],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.model.Product> com.example.demo.controller.ProductController.delete(int)
+2019-01-17 10:10:02.198  INFO 4844 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/create],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.example.demo.controller.ProductController.create(com.example.demo.model.Product,org.springframework.web.util.UriComponentsBuilder)
+2019-01-17 10:10:02.200  INFO 4844 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/get],methods=[GET],produces=[application/json]}" onto public java.util.List<com.example.demo.model.Product> com.example.demo.controller.ProductController.getAllProducts()
+2019-01-17 10:10:02.202  INFO 4844 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.model.Product> com.example.demo.controller.ProductController.getProductById(int)
+2019-01-17 10:10:02.248  INFO 4844 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-17 10:10:02.251  INFO 4844 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-17 10:10:02.510  INFO 4844 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-17 10:10:02.513  INFO 4844 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-17 10:10:02.646  INFO 4844 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-17 10:10:03.443  INFO 4844 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-01-17 10:10:03.575  INFO 4844 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-17 10:10:03.757  INFO 4844 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-01-17 10:10:03.769  INFO 4844 --- [restartedMain] com.example.demo.Demo2Application        : Started Demo2Application in 21.573 seconds (JVM running for 22.954)
+2019-01-17 10:10:09.444  INFO 4844 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-17 10:10:09.445  INFO 4844 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-17 10:10:09.512  INFO 4844 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 67 ms
+2019-01-17 10:10:09.702  INFO 4844 --- [http-nio-8080-exec-1] c.e.demo.controller.IndexController      : This is an info message
+2019-01-17 10:10:09.703  WARN 4844 --- [http-nio-8080-exec-1] c.e.demo.controller.IndexController      : This is a warn message
+2019-01-17 10:10:09.703 ERROR 4844 --- [http-nio-8080-exec-1] c.e.demo.controller.IndexController      : This is an error message
+2019-01-17 10:10:09.751  WARN 4844 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "index"
+2019-01-17 10:10:09.752  WARN 4844 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "index"
+2019-01-17 10:10:24.627  INFO 4844 --- [http-nio-8080-exec-4] c.e.demo.controller.IndexController      : This is an info message
+2019-01-17 10:10:24.628  WARN 4844 --- [http-nio-8080-exec-4] c.e.demo.controller.IndexController      : This is a warn message
+2019-01-17 10:10:24.629 ERROR 4844 --- [http-nio-8080-exec-4] c.e.demo.controller.IndexController      : This is an error message
+2019-01-17 10:10:24.635  WARN 4844 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "index"
+2019-01-17 10:10:24.635  WARN 4844 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "index"
+2019-01-17 10:11:55.448  INFO 4844 --- [Thread-6] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e17b5cc: startup date [Thu Jan 17 10:09:43 ICT 2019]; root of context hierarchy
+2019-01-17 10:11:55.452  INFO 4844 --- [Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-01-17 10:11:55.457  INFO 4844 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-17 10:11:56.581  INFO 4844 --- [restartedMain] com.example.demo.Demo2Application        : Starting Demo2Application on DESKTOP-SMEPSU4 with PID 4844 (C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql\target\classes started by SAMBATH in C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql)
+2019-01-17 10:11:56.582  INFO 4844 --- [restartedMain] com.example.demo.Demo2Application        : No active profile set, falling back to default profiles: default
+2019-01-17 10:11:56.592  INFO 4844 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b586146: startup date [Thu Jan 17 10:11:56 ICT 2019]; root of context hierarchy
+2019-01-17 10:11:58.435  INFO 4844 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-01-17 10:11:58.436  INFO 4844 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-17 10:11:58.437  INFO 4844 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-01-17 10:11:58.513  INFO 4844 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-17 10:11:58.515  INFO 4844 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1923 ms
+2019-01-17 10:11:58.619  INFO 4844 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-17 10:11:58.620  INFO 4844 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-17 10:11:58.621  INFO 4844 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-17 10:11:58.622  INFO 4844 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-17 10:11:58.623  INFO 4844 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-17 10:11:58.686  INFO 4844 --- [restartedMain] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.mysql.jdbc.Driver
+2019-01-17 10:11:58.795  INFO 4844 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-17 10:11:58.796  INFO 4844 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-17 10:11:58.845  INFO 4844 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-17 10:11:58.924  INFO 4844 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-17 10:12:00.847  INFO 4844 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-17 10:12:00.887  INFO 4844 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2019-01-17 10:12:01.000  INFO 4844 --- [restartedMain] o.s.o.h.HibernateTransactionManager      : Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@4e07dc77] of Hibernate SessionFactory for HibernateTransactionManager
+2019-01-17 10:12:01.215  INFO 4844 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b586146: startup date [Thu Jan 17 10:11:56 ICT 2019]; root of context hierarchy
+2019-01-17 10:12:01.265  INFO 4844 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto java.lang.String com.example.demo.controller.IndexController.index()
+2019-01-17 10:12:01.269  INFO 4844 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products]}" onto public org.springframework.http.ResponseEntity<java.util.List> com.example.demo.controller.ProductController.index()
+2019-01-17 10:12:01.270  INFO 4844 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/update],methods=[PUT],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.controller.ProductController.update(com.example.demo.model.Product)
+2019-01-17 10:12:01.270  INFO 4844 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}],methods=[DELETE],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.model.Product> com.example.demo.controller.ProductController.delete(int)
+2019-01-17 10:12:01.271  INFO 4844 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/create],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.example.demo.controller.ProductController.create(com.example.demo.model.Product,org.springframework.web.util.UriComponentsBuilder)
+2019-01-17 10:12:01.271  INFO 4844 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/get],methods=[GET],produces=[application/json]}" onto public java.util.List<com.example.demo.model.Product> com.example.demo.controller.ProductController.getAllProducts()
+2019-01-17 10:12:01.272  INFO 4844 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.model.Product> com.example.demo.controller.ProductController.getProductById(int)
+2019-01-17 10:12:01.276  INFO 4844 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-17 10:12:01.277  INFO 4844 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-17 10:12:01.356  INFO 4844 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-17 10:12:01.357  INFO 4844 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-17 10:12:01.408  INFO 4844 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-17 10:12:01.670  INFO 4844 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-01-17 10:12:01.903  INFO 4844 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-17 10:12:01.971  INFO 4844 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-01-17 10:12:01.988  INFO 4844 --- [restartedMain] com.example.demo.Demo2Application        : Started Demo2Application in 5.503 seconds (JVM running for 141.173)
+2019-01-17 10:14:18.081  INFO 4844 --- [Thread-10] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b586146: startup date [Thu Jan 17 10:11:56 ICT 2019]; root of context hierarchy
+2019-01-17 10:14:18.085  INFO 4844 --- [Thread-10] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-01-17 10:14:18.092  INFO 4844 --- [Thread-10] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-17 10:27:07.629  INFO 10456 --- [restartedMain] com.example.demo.Demo2Application        : Starting Demo2Application on DESKTOP-SMEPSU4 with PID 10456 (C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql\target\classes started by SAMBATH in C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql)
+2019-01-17 10:27:07.656  INFO 10456 --- [restartedMain] com.example.demo.Demo2Application        : No active profile set, falling back to default profiles: default
+2019-01-17 10:27:07.662  INFO 10456 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@79598cb2: startup date [Thu Jan 17 10:27:07 ICT 2019]; root of context hierarchy
+2019-01-17 10:27:09.841  INFO 10456 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-01-17 10:27:09.842  INFO 10456 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-17 10:27:09.842  INFO 10456 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-01-17 10:27:10.050  INFO 10456 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-17 10:27:10.053  INFO 10456 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2391 ms
+2019-01-17 10:27:10.149  INFO 10456 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-17 10:27:10.150  INFO 10456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-17 10:27:10.151  INFO 10456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-17 10:27:10.151  INFO 10456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-17 10:27:10.152  INFO 10456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-17 10:27:10.175  INFO 10456 --- [restartedMain] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.mysql.jdbc.Driver
+2019-01-17 10:27:10.321  INFO 10456 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-17 10:27:10.322  INFO 10456 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-17 10:27:10.359  INFO 10456 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-17 10:27:10.414  INFO 10456 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-17 10:27:11.417  INFO 10456 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-17 10:27:11.548  INFO 10456 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2019-01-17 10:27:12.006  INFO 10456 --- [restartedMain] o.s.o.h.HibernateTransactionManager      : Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@686e5933] of Hibernate SessionFactory for HibernateTransactionManager
+2019-01-17 10:27:12.142  INFO 10456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@79598cb2: startup date [Thu Jan 17 10:27:07 ICT 2019]; root of context hierarchy
+2019-01-17 10:27:12.168  INFO 10456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto java.lang.String com.example.demo.controller.IndexController.index()
+2019-01-17 10:27:12.172  INFO 10456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/update],methods=[PUT],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.controller.ProductController.update(com.example.demo.model.Product)
+2019-01-17 10:27:12.173  INFO 10456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}],methods=[DELETE],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.model.Product> com.example.demo.controller.ProductController.delete(int)
+2019-01-17 10:27:12.174  INFO 10456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/create],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.example.demo.controller.ProductController.create(com.example.demo.model.Product,org.springframework.web.util.UriComponentsBuilder)
+2019-01-17 10:27:12.175  INFO 10456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.model.Product> com.example.demo.controller.ProductController.getProductById(int)
+2019-01-17 10:27:12.176  INFO 10456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/get],methods=[GET],produces=[application/json]}" onto public java.util.List<com.example.demo.model.Product> com.example.demo.controller.ProductController.getAllProducts()
+2019-01-17 10:27:12.186  INFO 10456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-17 10:27:12.187  INFO 10456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-17 10:27:12.274  INFO 10456 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-17 10:27:12.274  INFO 10456 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-17 10:27:12.297  INFO 10456 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-17 10:27:12.447  INFO 10456 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-01-17 10:27:12.614  INFO 10456 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-17 10:27:12.641  INFO 10456 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-01-17 10:27:12.643  INFO 10456 --- [restartedMain] com.example.demo.Demo2Application        : Started Demo2Application in 5.188 seconds (JVM running for 258.993)
+2019-01-17 10:27:41.600  INFO 10456 --- [Thread-16] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@79598cb2: startup date [Thu Jan 17 10:27:07 ICT 2019]; root of context hierarchy
+2019-01-17 10:27:41.603  INFO 10456 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-01-17 10:27:41.607  INFO 10456 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-17 10:27:42.970  INFO 10456 --- [restartedMain] com.example.demo.Demo2Application        : Starting Demo2Application on DESKTOP-SMEPSU4 with PID 10456 (C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql\target\classes started by SAMBATH in C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql)
+2019-01-17 10:27:42.972  INFO 10456 --- [restartedMain] com.example.demo.Demo2Application        : No active profile set, falling back to default profiles: default
+2019-01-17 10:27:42.976  INFO 10456 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35966bec: startup date [Thu Jan 17 10:27:42 ICT 2019]; root of context hierarchy
+2019-01-17 10:27:44.588  INFO 10456 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-01-17 10:27:44.589  INFO 10456 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-17 10:27:44.590  INFO 10456 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-01-17 10:27:44.660  INFO 10456 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-17 10:27:44.662  INFO 10456 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1686 ms
+2019-01-17 10:27:44.721  INFO 10456 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-17 10:27:44.723  INFO 10456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-17 10:27:44.725  INFO 10456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-17 10:27:44.814  INFO 10456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-17 10:27:44.815  INFO 10456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-17 10:27:44.841  INFO 10456 --- [restartedMain] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.mysql.jdbc.Driver
+2019-01-17 10:27:44.950  INFO 10456 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-17 10:27:44.950  INFO 10456 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-17 10:27:44.986  INFO 10456 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-17 10:27:45.030  INFO 10456 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-17 10:27:46.073  INFO 10456 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-17 10:27:46.126  INFO 10456 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2019-01-17 10:27:46.249  INFO 10456 --- [restartedMain] o.s.o.h.HibernateTransactionManager      : Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@6ac1d26a] of Hibernate SessionFactory for HibernateTransactionManager
+2019-01-17 10:27:46.458  INFO 10456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35966bec: startup date [Thu Jan 17 10:27:42 ICT 2019]; root of context hierarchy
+2019-01-17 10:27:46.497  INFO 10456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto java.lang.String com.example.demo.controller.IndexController.index()
+2019-01-17 10:27:46.502  INFO 10456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/update],methods=[PUT],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.controller.ProductController.update(com.example.demo.model.Product)
+2019-01-17 10:27:46.503  INFO 10456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}],methods=[DELETE],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.model.Product> com.example.demo.controller.ProductController.delete(int)
+2019-01-17 10:27:46.503  INFO 10456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/create],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.example.demo.controller.ProductController.create(com.example.demo.model.Product,org.springframework.web.util.UriComponentsBuilder)
+2019-01-17 10:27:46.504  INFO 10456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.model.Product> com.example.demo.controller.ProductController.getProductById(int)
+2019-01-17 10:27:46.504  INFO 10456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/get],methods=[GET],produces=[application/json]}" onto public java.util.List<com.example.demo.model.Product> com.example.demo.controller.ProductController.getAllProducts()
+2019-01-17 10:27:46.506  INFO 10456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-17 10:27:46.559  INFO 10456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-17 10:27:46.576  INFO 10456 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-17 10:27:46.577  INFO 10456 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-17 10:27:46.626  INFO 10456 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-17 10:27:46.785  INFO 10456 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-01-17 10:27:46.890  INFO 10456 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-17 10:27:46.922  INFO 10456 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-01-17 10:27:46.928  INFO 10456 --- [restartedMain] com.example.demo.Demo2Application        : Started Demo2Application in 4.301 seconds (JVM running for 293.278)
+2019-01-17 10:27:50.266  INFO 10456 --- [Thread-22] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35966bec: startup date [Thu Jan 17 10:27:42 ICT 2019]; root of context hierarchy
+2019-01-17 10:27:50.271  INFO 10456 --- [Thread-22] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-01-17 10:27:50.276  INFO 10456 --- [Thread-22] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-17 10:27:51.313  INFO 10456 --- [restartedMain] com.example.demo.Demo2Application        : Starting Demo2Application on DESKTOP-SMEPSU4 with PID 10456 (C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql\target\classes started by SAMBATH in C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql)
+2019-01-17 10:27:51.315  INFO 10456 --- [restartedMain] com.example.demo.Demo2Application        : No active profile set, falling back to default profiles: default
+2019-01-17 10:27:51.326  INFO 10456 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2af0f85c: startup date [Thu Jan 17 10:27:51 ICT 2019]; root of context hierarchy
+2019-01-17 10:27:53.194  INFO 10456 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-01-17 10:27:53.210  INFO 10456 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-17 10:27:53.211  INFO 10456 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-01-17 10:27:53.329  INFO 10456 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-17 10:27:53.331  INFO 10456 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2005 ms
+2019-01-17 10:27:53.414  INFO 10456 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-17 10:27:53.414  INFO 10456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-17 10:27:53.414  INFO 10456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-17 10:27:53.415  INFO 10456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-17 10:27:53.416  INFO 10456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-17 10:27:53.449  INFO 10456 --- [restartedMain] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.mysql.jdbc.Driver
+2019-01-17 10:27:53.530  INFO 10456 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-17 10:27:53.530  INFO 10456 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-17 10:27:53.595  INFO 10456 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-17 10:27:53.637  INFO 10456 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-17 10:28:18.845  INFO 6712 --- [restartedMain] com.example.demo.Demo2Application        : Starting Demo2Application on DESKTOP-SMEPSU4 with PID 6712 (C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql\target\classes started by SAMBATH in C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql)
+2019-01-17 10:28:18.848  INFO 6712 --- [restartedMain] com.example.demo.Demo2Application        : No active profile set, falling back to default profiles: default
+2019-01-17 10:28:19.068  INFO 6712 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b046b0d: startup date [Thu Jan 17 10:28:19 ICT 2019]; root of context hierarchy
+2019-01-17 10:28:25.345  INFO 6712 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-01-17 10:28:25.406  INFO 6712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-17 10:28:25.410  INFO 6712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-01-17 10:28:25.804  INFO 6712 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-17 10:28:25.806  INFO 6712 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6745 ms
+2019-01-17 10:28:26.296  INFO 6712 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-17 10:28:26.305  INFO 6712 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-17 10:28:26.306  INFO 6712 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-17 10:28:26.307  INFO 6712 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-17 10:28:26.308  INFO 6712 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-17 10:28:26.448  INFO 6712 --- [restartedMain] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.mysql.jdbc.Driver
+2019-01-17 10:28:27.941  INFO 6712 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-17 10:28:28.135  INFO 6712 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-17 10:28:29.716  INFO 6712 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-01-17 10:28:29.726  INFO 6712 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-01-17 10:28:29.732  INFO 6712 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-01-17 10:28:30.366  INFO 6712 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-17 10:28:31.850  INFO 6712 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-17 10:28:35.516  INFO 6712 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-17 10:28:36.814  INFO 6712 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-17 10:28:37.051  INFO 6712 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2019-01-17 10:28:37.418  INFO 6712 --- [restartedMain] o.s.o.h.HibernateTransactionManager      : Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@b758d3d] of Hibernate SessionFactory for HibernateTransactionManager
+2019-01-17 10:28:38.554  INFO 6712 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b046b0d: startup date [Thu Jan 17 10:28:19 ICT 2019]; root of context hierarchy
+2019-01-17 10:28:38.898  INFO 6712 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto java.lang.String com.example.demo.controller.IndexController.index()
+2019-01-17 10:28:38.917  INFO 6712 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/update],methods=[PUT],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.controller.ProductController.update(com.example.demo.model.Product)
+2019-01-17 10:28:38.918  INFO 6712 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}],methods=[DELETE],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.model.Product> com.example.demo.controller.ProductController.delete(int)
+2019-01-17 10:28:38.919  INFO 6712 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/create],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.example.demo.controller.ProductController.create(com.example.demo.model.Product,org.springframework.web.util.UriComponentsBuilder)
+2019-01-17 10:28:38.920  INFO 6712 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.model.Product> com.example.demo.controller.ProductController.getProductById(int)
+2019-01-17 10:28:38.921  INFO 6712 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/get],methods=[GET],produces=[application/json]}" onto public java.util.List<com.example.demo.model.Product> com.example.demo.controller.ProductController.getAllProducts()
+2019-01-17 10:28:38.926  INFO 6712 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-17 10:28:38.928  INFO 6712 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-17 10:28:39.085  INFO 6712 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-17 10:28:39.085  INFO 6712 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-17 10:28:39.190  INFO 6712 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-17 10:28:39.981  INFO 6712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-01-17 10:28:40.405  INFO 6712 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-17 10:28:40.882  INFO 6712 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-01-17 10:28:40.942  INFO 6712 --- [restartedMain] com.example.demo.Demo2Application        : Started Demo2Application in 22.966 seconds (JVM running for 24.336)
+2019-01-17 10:28:47.733  INFO 6712 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-17 10:28:47.734  INFO 6712 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-17 10:28:47.811  INFO 6712 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 77 ms
+2019-01-17 10:29:07.052  WARN 6712 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "products"
+2019-01-17 10:29:07.053  WARN 6712 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "products"
+2019-01-17 10:30:36.483  INFO 5088 --- [restartedMain] com.example.demo.Demo2Application        : Starting Demo2Application on DESKTOP-SMEPSU4 with PID 5088 (C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql\target\classes started by SAMBATH in C:\Users\SAMBATH\Documents\workspace-sts-3.9.7.RELEASE\springboot_hibernate_mysql)
+2019-01-17 10:30:36.486  INFO 5088 --- [restartedMain] com.example.demo.Demo2Application        : No active profile set, falling back to default profiles: default
+2019-01-17 10:30:36.719  INFO 5088 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@94ab7c0: startup date [Thu Jan 17 10:30:36 ICT 2019]; root of context hierarchy
+2019-01-17 10:30:42.812  INFO 5088 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-01-17 10:30:42.861  INFO 5088 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-17 10:30:42.878  INFO 5088 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-01-17 10:30:43.289  INFO 5088 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-17 10:30:43.291  INFO 5088 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6577 ms
+2019-01-17 10:30:43.870  INFO 5088 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-17 10:30:43.882  INFO 5088 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-17 10:30:43.884  INFO 5088 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-17 10:30:43.885  INFO 5088 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-17 10:30:43.887  INFO 5088 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-17 10:30:44.008  INFO 5088 --- [restartedMain] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.mysql.jdbc.Driver
+2019-01-17 10:30:45.228  INFO 5088 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-17 10:30:45.269  INFO 5088 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-17 10:30:45.640  INFO 5088 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-01-17 10:30:45.652  INFO 5088 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-01-17 10:30:45.657  INFO 5088 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-01-17 10:30:45.839  INFO 5088 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-17 10:30:46.133  INFO 5088 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-17 10:30:47.397  INFO 5088 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-17 10:30:48.666  INFO 5088 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-17 10:30:48.743  INFO 5088 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2019-01-17 10:30:49.069  INFO 5088 --- [restartedMain] o.s.o.h.HibernateTransactionManager      : Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@962419d] of Hibernate SessionFactory for HibernateTransactionManager
+2019-01-17 10:30:49.906  INFO 5088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@94ab7c0: startup date [Thu Jan 17 10:30:36 ICT 2019]; root of context hierarchy
+2019-01-17 10:30:50.220  INFO 5088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto java.lang.String com.example.demo.controller.IndexController.index()
+2019-01-17 10:30:50.248  INFO 5088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products]}" onto public org.springframework.http.ResponseEntity<java.util.List> com.example.demo.controller.ProductController.index()
+2019-01-17 10:30:50.250  INFO 5088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/update],methods=[PUT],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.controller.ProductController.update(com.example.demo.model.Product)
+2019-01-17 10:30:50.250  INFO 5088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}],methods=[DELETE],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.model.Product> com.example.demo.controller.ProductController.delete(int)
+2019-01-17 10:30:50.251  INFO 5088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/create],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.example.demo.controller.ProductController.create(com.example.demo.model.Product,org.springframework.web.util.UriComponentsBuilder)
+2019-01-17 10:30:50.253  INFO 5088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.model.Product> com.example.demo.controller.ProductController.getProductById(int)
+2019-01-17 10:30:50.255  INFO 5088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/get],methods=[GET],produces=[application/json]}" onto public java.util.List<com.example.demo.model.Product> com.example.demo.controller.ProductController.getAllProducts()
+2019-01-17 10:30:50.260  INFO 5088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-17 10:30:50.261  INFO 5088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-17 10:30:50.625  INFO 5088 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-17 10:30:50.628  INFO 5088 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-17 10:30:50.873  INFO 5088 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-17 10:30:51.591  INFO 5088 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-01-17 10:30:51.742  INFO 5088 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-17 10:30:51.908  INFO 5088 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-01-17 10:30:51.922  INFO 5088 --- [restartedMain] com.example.demo.Demo2Application        : Started Demo2Application in 16.266 seconds (JVM running for 17.728)
+2019-01-17 10:30:56.864  INFO 5088 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-17 10:30:56.866  INFO 5088 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-17 10:30:56.917  INFO 5088 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 51 ms

@@ -6,8 +6,10 @@ import java.util.List;
 
 import javax.transaction.Transactional;
 
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -30,8 +32,12 @@ public class ProductDaoImp {
 	
 	public Product findById(int id) {
 		// TODO Auto-generated method stub
+	
 		Session session = sessionFactory.getCurrentSession();
 		Product product=(Product) session.get(Product.class,id);
+//		Criteria cr = session.createCriteria(Product.class);
+//		cr.add(Restrictions.eq("price", id));
+//		
 		return product;
 	}
 	

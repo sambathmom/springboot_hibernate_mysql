@@ -3,6 +3,9 @@ package com.example.demo.controller;
   
 import java.util.List;
 
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -27,17 +30,19 @@ import com.example.demo.service.ProductService;
 	  @Autowired
 	  ProductService productService;
 	  
-	  @RequestMapping("/") 
+	  Logger logger = LoggerFactory.getLogger(ProductController.class);
+	  
+	  @RequestMapping("/products") 
 	  public ResponseEntity<List> index() { 
 		  
+		  logger.info("Get all products");
 		  List products = productService.getProducts();
-		  
 		  return new ResponseEntity<List>(products,HttpStatus.OK);
 	  }
 
 	  @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
       public ResponseEntity<Product> getProductById(@PathVariable("id") int id) {
-	        System.out.println("Fetching product with id " + id);
+	        
 	        Product product = productService.findById(id);
 	        if (product == null) {
 	            return new ResponseEntity<Product>(HttpStatus.NOT_FOUND);
