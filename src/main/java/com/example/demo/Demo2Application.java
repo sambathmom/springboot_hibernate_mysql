@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-// @SpringBootConfiguration
+@SpringBootConfiguration
 @ComponentScan
 public class Demo2Application {
 
