@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 // @SpringBootConfiguration
-// @ComponentScan
+@ComponentScan
 public class Demo2Application {
 
 	public static void main(String[] args) {
