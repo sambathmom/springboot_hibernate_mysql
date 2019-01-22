@@ -25,6 +25,7 @@ import com.example.demo.model.Product;
 import com.example.demo.service.ProductService;
   
   @RestController 
+  @RequestMapping("/product")
   public class ProductController {
   
 	  @Autowired
@@ -32,13 +33,13 @@ import com.example.demo.service.ProductService;
 	  
 	  Logger logger = LoggerFactory.getLogger(ProductController.class);
 	  
-	  @RequestMapping("/products") 
-	  public ResponseEntity<List> index() { 
-		  
-		  logger.info("Get all products");
-		  List products = productService.getProducts();
-		  return new ResponseEntity<List>(products,HttpStatus.OK);
-	  }
+//	  @RequestMapping("/products") 
+//	  public ResponseEntity<List> index() { 
+//		  
+//		  logger.info("Get all products");
+//		  List products = productService.getProducts();
+//		  return new ResponseEntity<List>(products,HttpStatus.OK);
+//	  }
 
 	  @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
       public ResponseEntity<Product> getProductById(@PathVariable("id") int id) {
